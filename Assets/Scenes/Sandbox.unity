@@ -1815,6 +1815,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1451978705845644906, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
+      propertyPath: impactVFX
+      value: 
+      objectReference: {fileID: 6177333351246217386, guid: 3c57a7a853df35149a5b4a5745757be0, type: 3}
+    - target: {fileID: 1451978705845644906, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
       propertyPath: muzzleflash
       value: 
       objectReference: {fileID: 4679716369897208629}

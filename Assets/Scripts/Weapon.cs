@@ -9,6 +9,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] float range = 100f;
     [SerializeField] float damage = 30f;
     [SerializeField] ParticleSystem muzzleflash;
+    [SerializeField] GameObject impactVFX;
 
     // Update is called once per frame
     void Update()
@@ -36,8 +37,8 @@ public class Weapon : MonoBehaviour
         if (Physics.Raycast(FPVCamera.transform.position, FPVCamera.transform.forward, out hit, range))
 
         {
-            Debug.Log($" Hit to => {hit.transform.name} ");
-            // add vfx
+            ProcessImpactVFX(hit);
+            
             EnemyHealth target = hit.transform.GetComponent<EnemyHealth>();
             if (target == null) return;
             target.TakeDamage(damage);
@@ -47,5 +48,11 @@ public class Weapon : MonoBehaviour
         {
             return;
         }
+    }
+
+    void ProcessImpactVFX(RaycastHit hit)
+    {
+        GameObject VFX = Instantiate(impactVFX, hit.point, Quaternion.LookRotation(hit.normal));
+        Destroy(VFX, 1);
     }
 }

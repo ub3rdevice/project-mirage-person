@@ -7,6 +7,7 @@ public class Weapon : MonoBehaviour
 {
     [SerializeField] Camera FPVCamera;
     [SerializeField] float range = 100f;
+    [SerializeField] float damage = 30f;
  
     // Update is called once per frame
     void Update()
@@ -20,8 +21,19 @@ public class Weapon : MonoBehaviour
     void Shoot()
     {
         RaycastHit hit;
-        Physics.Raycast(FPVCamera.transform.position, FPVCamera.transform.forward,out hit, range);
+        if(Physics.Raycast(FPVCamera.transform.position, FPVCamera.transform.forward,out hit, range))
+
+        {
+            Debug.Log($" Hit to => {hit.transform.name} ");
+            // add vfx
+            EnemyHealth target = hit.transform.GetComponent<EnemyHealth>();
+            if (target == null) return;
+            target.TakeDamage(damage);
+        }
         
-        Debug.Log($" Hit to => {hit.transform.name} ");
+        else
+        {
+            return;
+        } 
     }
 }

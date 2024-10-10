@@ -4160,6 +4160,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 66a13889798137c498eae4b3acdafe19, type: 3}
   m_PrefabInstance: {fileID: 2067082499}
   m_PrefabAsset: {fileID: 0}
+--- !u!20 &1112249079 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 8691522926229605437, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
+  m_PrefabInstance: {fileID: 4679716369897208628}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1117465397
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9110,6 +9115,10 @@ PrefabInstance:
       propertyPath: gameOverCanvas
       value: 
       objectReference: {fileID: 1942640347}
+    - target: {fileID: -1620013741081563405, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
+      propertyPath: FPVCamera
+      value: 
+      objectReference: {fileID: 1112249079}
     - target: {fileID: 494851850787528406, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
       propertyPath: m_LocalPosition.x
       value: 35.24
@@ -9161,6 +9170,30 @@ PrefabInstance:
     - target: {fileID: 6130555718071955760, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672021495519940888, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
+      propertyPath: mouseLook.smooth
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672021495519940888, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
+      propertyPath: movementSettings.StrafeSpeed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672021495519940888, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
+      propertyPath: advancedSettings.slowDownRate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672021495519940888, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
+      propertyPath: movementSettings.ForwardSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672021495519940888, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
+      propertyPath: movementSettings.BackwardSpeed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8691522926229605437, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
+      propertyPath: field of view
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

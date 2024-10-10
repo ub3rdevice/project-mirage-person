@@ -1147,6 +1147,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5488192619930439349, guid: eac1e7b7d6c5f494496cf10e7e2c67c7, type: 3}
   m_PrefabInstance: {fileID: 911485884}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &219350474 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 848218058125163909, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
+  m_PrefabInstance: {fileID: 4679716369897208628}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &229546497
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2473,6 +2478,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eac1e7b7d6c5f494496cf10e7e2c67c7, type: 3}
+--- !u!198 &522542458 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 5752011483990087236, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
+  m_PrefabInstance: {fileID: 4679716369897208628}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &525205503 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 66a13889798137c498eae4b3acdafe19, type: 3}
@@ -9115,10 +9125,6 @@ PrefabInstance:
       propertyPath: gameOverCanvas
       value: 
       objectReference: {fileID: 1942640347}
-    - target: {fileID: -1620013741081563405, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
-      propertyPath: FPVCamera
-      value: 
-      objectReference: {fileID: 1112249079}
     - target: {fileID: 494851850787528406, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
       propertyPath: m_LocalPosition.x
       value: 35.24
@@ -9159,58 +9165,59 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1451978705845644906, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
+    - target: {fileID: 3040661805723910019, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3533602663049865315, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 4679716369897208630}
-    - target: {fileID: 1451978705845644906, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
+    - target: {fileID: 3533602663049865315, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
+      propertyPath: FPVCamera
+      value: 
+      objectReference: {fileID: 1112249079}
+    - target: {fileID: 3533602663049865315, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
       propertyPath: impactVFX
       value: 
       objectReference: {fileID: 6177333351246217386, guid: 3c57a7a853df35149a5b4a5745757be0, type: 3}
-    - target: {fileID: 1451978705845644906, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
+    - target: {fileID: 3533602663049865315, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
       propertyPath: muzzleflash
       value: 
-      objectReference: {fileID: 4679716369897208629}
+      objectReference: {fileID: 219350474}
+    - target: {fileID: 4744341894790305684, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6057982342525794365, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
+      propertyPath: ammoSlot
+      value: 
+      objectReference: {fileID: 4679716369897208630}
+    - target: {fileID: 6057982342525794365, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
+      propertyPath: FPVCamera
+      value: 
+      objectReference: {fileID: 1112249079}
+    - target: {fileID: 6057982342525794365, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
+      propertyPath: impactVFX
+      value: 
+      objectReference: {fileID: 6177333351246217386, guid: 3c57a7a853df35149a5b4a5745757be0, type: 3}
+    - target: {fileID: 6057982342525794365, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
+      propertyPath: muzzleflash
+      value: 
+      objectReference: {fileID: 522542458}
+    - target: {fileID: 6088783608442528534, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6130555718071955760, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 8672021495519940888, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
-      propertyPath: mouseLook.smooth
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8672021495519940888, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
-      propertyPath: movementSettings.StrafeSpeed
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8672021495519940888, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
-      propertyPath: advancedSettings.slowDownRate
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8672021495519940888, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
-      propertyPath: movementSettings.ForwardSpeed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8672021495519940888, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
-      propertyPath: movementSettings.BackwardSpeed
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8691522926229605437, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
-      propertyPath: field of view
-      value: 60
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 721331435192859791, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
-    - {fileID: 8951946514222845588, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
---- !u!198 &4679716369897208629 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 6340406694960234730, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
-  m_PrefabInstance: {fileID: 4679716369897208628}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &4679716369897208630 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2999850511351175421, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}

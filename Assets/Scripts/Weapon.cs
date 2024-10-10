@@ -8,29 +8,35 @@ public class Weapon : MonoBehaviour
     [SerializeField] Camera FPVCamera;
     [SerializeField] float range = 100f;
     [SerializeField] float damage = 30f;
+    [SerializeField] float timeBetweenShots = .5f;
     [SerializeField] ParticleSystem muzzleflash;
     [SerializeField] GameObject impactVFX;
     [SerializeField] Ammo ammoSlot;
+
+    bool canShoot = true;
     
+
     void Update()
     {
-        if(Input.GetButtonDown("Fire1"))
+        if(Input.GetMouseButtonDown(0) && canShoot ==true)
         {
-            Shoot();
+            StartCoroutine(Shoot());
         }
     }
 
 
-    void Shoot()
+    IEnumerator Shoot()
     {
-        if(ammoSlot.GetCurrentAmmo() > 0)
+        canShoot = false;
 
+        if(ammoSlot.GetCurrentAmmo() > 0)
         {
             PlayMuzzleflashVFX();
             ProcessRaycast();
             ammoSlot.ReduceCurrentAmmo();
         }
-
+        yield return new WaitForSeconds(timeBetweenShots);
+        canShoot = true;
     }
 
     void PlayMuzzleflashVFX()

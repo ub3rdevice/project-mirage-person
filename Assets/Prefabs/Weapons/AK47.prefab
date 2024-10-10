@@ -473,8 +473,8 @@ MonoBehaviour:
   FPVCamera: {fileID: 0}
   range: 100
   damage: 30
-  muzzleflash: {fileID: 0}
-  impactVFX: {fileID: 0}
+  muzzleflash: {fileID: 5678003282147408134}
+  impactVFX: {fileID: 6177333351246217386, guid: 3c57a7a853df35149a5b4a5745757be0, type: 3}
   ammoSlot: {fileID: 0}
 --- !u!1 &6698608116533327681
 GameObject:
@@ -790,6 +790,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a60d8477aafac045a1f56d3a60c7813, type: 3}
+--- !u!198 &5678003282147408134 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3614249443508621660, guid: 4a60d8477aafac045a1f56d3a60c7813, type: 3}
+  m_PrefabInstance: {fileID: 8999376635788126298}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5952069117119700553 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3350055855090824723, guid: 4a60d8477aafac045a1f56d3a60c7813, type: 3}

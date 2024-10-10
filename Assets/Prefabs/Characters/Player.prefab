@@ -225,7 +225,6 @@ GameObject:
   - component: {fileID: 8672021495519940888}
   - component: {fileID: 4826525109189772335}
   - component: {fileID: -4173785404711412182}
-  - component: {fileID: -1620013741081563405}
   - component: {fileID: 2999850511351175421}
   m_Layer: 0
   m_Name: Player
@@ -395,23 +394,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverCanvas: {fileID: 0}
---- !u!114 &-1620013741081563405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6130555718071955760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ecf7e1f29539f248b9d4303c3b85f9c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FPVCamera: {fileID: 8691522926229605437}
-  zoomedInFOV: 25
-  zoomedOutFOV: 60
-  zoomedInSens: 1
-  zoomedOutSens: 2
 --- !u!114 &2999850511351175421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -550,42 +532,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6406016960211070584, guid: 8b33bc2d75dc1734baccd44b58fdffd5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1451978705845644906}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b33bc2d75dc1734baccd44b58fdffd5, type: 3}
---- !u!1 &4744341894790305684 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6406016960211070584, guid: 8b33bc2d75dc1734baccd44b58fdffd5, type: 3}
-  m_PrefabInstance: {fileID: 1815504447367346668}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1451978705845644906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4744341894790305684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f88a6152395dd64d91da19bfb04d3f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FPVCamera: {fileID: 8691522926229605437}
-  range: 100
-  damage: 30
-  muzzleflash: {fileID: 6340406694960234730}
-  impactVFX: {fileID: 6177333351246217386, guid: 3c57a7a853df35149a5b4a5745757be0, type: 3}
-  ammoSlot: {fileID: 2999850511351175421}
 --- !u!4 &5376340819626855726 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6029597317902005442, guid: 8b33bc2d75dc1734baccd44b58fdffd5, type: 3}
-  m_PrefabInstance: {fileID: 1815504447367346668}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &6340406694960234730 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 5678003282147408134, guid: 8b33bc2d75dc1734baccd44b58fdffd5, type: 3}
   m_PrefabInstance: {fileID: 1815504447367346668}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6964180676358003560

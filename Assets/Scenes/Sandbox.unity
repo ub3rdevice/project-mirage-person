@@ -3794,6 +3794,24 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: 900e53dd850c9cc4281be6fa21bdfea5, type: 3}
+--- !u!1 &932347153 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4071658654944510113, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
+  m_PrefabInstance: {fileID: 4679716369897208628}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &932347155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932347153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18cd6dbcf7d9bbb43a74c5ae6f6f8f89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentWeapon: 0
 --- !u!1 &963442137 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 66a13889798137c498eae4b3acdafe19, type: 3}
@@ -9289,12 +9307,15 @@ PrefabInstance:
       objectReference: {fileID: 1112249079}
     - target: {fileID: 7612710394750276375, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
       propertyPath: timeBetweenShots
-      value: 0.1
+      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4071658654944510113, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 932347155}
     - targetCorrespondingSourceObject: {fileID: 4744341894790305684, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
       insertIndex: -1
       addedObject: {fileID: 467148842}

@@ -2604,6 +2604,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4173785404711412182, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
+      propertyPath: gameOverCanvas
+      value: 
+      objectReference: {fileID: 1942640347}
     - target: {fileID: 494851850787528406, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
       propertyPath: m_LocalPosition.x
       value: 16.96

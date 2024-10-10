@@ -9,6 +9,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        BroadcastMessage("OnDamageTaken", damage); //string ref is bad, mmkay
         HP -= damage;
         if (HP <= 0)
         {

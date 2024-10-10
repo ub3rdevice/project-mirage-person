@@ -14,26 +14,40 @@ public class WeaponZoom : MonoBehaviour
 
     bool zoomedInToggle = false;
 
+    void OnDisable()
+    {
+       ZoomOut(); 
+    }
+
     void Update()
     {
         if(Input.GetMouseButtonDown(1))
         {
             if(zoomedInToggle == false)
             {
-                zoomedInToggle = true;
-                FPVCamera.fieldOfView = zoomedInFOV;
-                fpscontroller.mouseLook.XSensitivity = zoomedInSens;
-                fpscontroller.mouseLook.YSensitivity = zoomedInSens;
-                
+                ZoomIn();
+
             }
             else
             {
-                zoomedInToggle = false;
-                FPVCamera.fieldOfView = zoomedOutFOV;
-                fpscontroller.mouseLook.XSensitivity = zoomedOutSens;
-                fpscontroller.mouseLook.YSensitivity = zoomedOutSens;
+                ZoomOut();
             }
         }
     }
-    
+
+    void ZoomIn()
+    {
+        zoomedInToggle = true;
+        FPVCamera.fieldOfView = zoomedInFOV;
+        fpscontroller.mouseLook.XSensitivity = zoomedInSens;
+        fpscontroller.mouseLook.YSensitivity = zoomedInSens;
+    }
+
+    void ZoomOut()
+    {
+        zoomedInToggle = false;
+        FPVCamera.fieldOfView = zoomedOutFOV;
+        fpscontroller.mouseLook.XSensitivity = zoomedOutSens;
+        fpscontroller.mouseLook.YSensitivity = zoomedOutSens;
+    }
 }

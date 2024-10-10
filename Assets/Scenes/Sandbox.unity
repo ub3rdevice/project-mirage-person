@@ -9217,6 +9217,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2999850511351175421, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
+      propertyPath: ammoSlots.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2999850511351175421, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
+      propertyPath: ammoSlots.Array.data[1].ammoType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2999850511351175421, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
+      propertyPath: ammoSlots.Array.data[2].ammoType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2999850511351175421, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
+      propertyPath: ammoSlots.Array.data[0].ammoAmount
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2999850511351175421, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
+      propertyPath: ammoSlots.Array.data[1].ammoAmount
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2999850511351175421, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
+      propertyPath: ammoSlots.Array.data[2].ammoAmount
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 3040661805723910019, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -9233,6 +9257,10 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 4679716369897208630}
+    - target: {fileID: 3533602663049865315, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
+      propertyPath: ammoType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3533602663049865315, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
       propertyPath: FPVCamera
       value: 
@@ -9265,6 +9293,10 @@ PrefabInstance:
       propertyPath: ammoSlot
       value: 
       objectReference: {fileID: 4679716369897208630}
+    - target: {fileID: 6057982342525794365, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
+      propertyPath: ammoType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6057982342525794365, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
       propertyPath: FPVCamera
       value: 
@@ -9307,7 +9339,7 @@ PrefabInstance:
       objectReference: {fileID: 1112249079}
     - target: {fileID: 7612710394750276375, guid: 863b35459770ca64a8bc1a5f087bf182, type: 3}
       propertyPath: timeBetweenShots
-      value: 0.25
+      value: 0.15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

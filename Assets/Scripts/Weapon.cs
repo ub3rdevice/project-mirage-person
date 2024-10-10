@@ -12,9 +12,14 @@ public class Weapon : MonoBehaviour
     [SerializeField] ParticleSystem muzzleflash;
     [SerializeField] GameObject impactVFX;
     [SerializeField] Ammo ammoSlot;
+    [SerializeField] AmmoType ammoType;
 
     bool canShoot = true;
     
+    void OnEnable()
+    {
+        canShoot = true;
+    }
 
     void Update()
     {
@@ -29,11 +34,11 @@ public class Weapon : MonoBehaviour
     {
         canShoot = false;
 
-        if(ammoSlot.GetCurrentAmmo() > 0)
+        if(ammoSlot.GetCurrentAmmo(ammoType) > 0)
         {
             PlayMuzzleflashVFX();
             ProcessRaycast();
-            ammoSlot.ReduceCurrentAmmo();
+            ammoSlot.ReduceCurrentAmmo(ammoType);
         }
         yield return new WaitForSeconds(timeBetweenShots);
         canShoot = true;

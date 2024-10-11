@@ -16,8 +16,9 @@ public class Weapon : MonoBehaviour
     [SerializeField] AmmoType ammoType;
     [SerializeField] TextMeshProUGUI ammoText;
 
+
     bool canShoot = true;
-    
+
     void OnEnable()
     {
         canShoot = true;
@@ -81,4 +82,5 @@ public class Weapon : MonoBehaviour
         GameObject VFX = Instantiate(impactVFX, hit.point, Quaternion.LookRotation(hit.normal));
         Destroy(VFX, 1);
     }
+
 }

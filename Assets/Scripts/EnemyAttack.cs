@@ -12,11 +12,10 @@ public class EnemyAttack : MonoBehaviour
         target = FindObjectOfType<PlayerHealth>();
     }
 
-    public void AttackHitEvent()
+    public void AttackHitEvent() //this is the name of event that you've to manually add on animation track on desired timeframe
     {
         if (target == null) { return; }
         target.PlayerTakeDamage(dmg);
-        Debug.Log("Boom, headshot!");
     }
    
 }

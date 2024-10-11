@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ammo Pickup (Bullets)
       objectReference: {fileID: 0}
+    - target: {fileID: 2277242943451732567, guid: 3069bbe89fb058c4198231d76e2ad575, type: 3}
+      propertyPath: ammoAmount
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 5017144485587242774, guid: 3069bbe89fb058c4198231d76e2ad575, type: 3}
       propertyPath: m_Center.y
       value: 0.27

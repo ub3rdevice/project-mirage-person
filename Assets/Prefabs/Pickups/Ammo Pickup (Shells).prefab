@@ -170,7 +170,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2277242943451732567, guid: 3069bbe89fb058c4198231d76e2ad575, type: 3}
       propertyPath: ammoAmount
-      value: 2
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4861043361843865921, guid: 3069bbe89fb058c4198231d76e2ad575, type: 3}
       propertyPath: m_Materials.Array.size

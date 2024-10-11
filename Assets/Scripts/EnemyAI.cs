@@ -11,6 +11,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] float enemyChaseRange = 5.5f;
     [SerializeField] float turnSpeed = 4.5f;
     NavMeshAgent navMeshAgent;
+    EnemyHealth health;
     float distanceToTarget = Mathf.Infinity;
     bool isProvoked = false;
     
@@ -18,11 +19,17 @@ public class EnemyAI : MonoBehaviour
     void Start()
     {
         navMeshAgent = GetComponent<NavMeshAgent>();
+        health = GetComponent<EnemyHealth>();
     }
 
     
     void Update()
     {
+        if(health.IsDead)
+        {
+            enabled = false;
+            navMeshAgent.enabled = false;
+        }
         distanceToTarget = UnityEngine.Vector3.Distance(target.position, transform.position);
 
         if (isProvoked)
@@ -64,6 +71,7 @@ public class EnemyAI : MonoBehaviour
         GetComponent<Animator>().SetBool("attack", false); 
         GetComponent<Animator>().SetTrigger("move");
         navMeshAgent.SetDestination(target.position);
+        
     }
 
     void OnDrawGizmosSelected() 
